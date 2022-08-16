@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea {
+  outline: none;
+  resize: none;
+}
+
+.notes-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0;
+}
+
+.app-header__title {
+  margin: 10px 20px 0px;
+  font-family: Arial, sans-serif;
+}
+
+.app-header__controls {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 0 10px;
+}
+
+.search,
+.add-new {
+  font-size: 14px;
+  padding: 5px;
+  margin: 8px;
+}
+
+.search {
+  flex-grow: 1;
+  max-width: 300px;
+  border-radius: 5px;
+  border: 1px solid #d6d6d6;
+  height: 33px;
+}
+
+.add-new {
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+  font-weight: bolder;
+  background-color: #d6d6d6;
+  border: none;
+}
+
+.note {
+  font-family: "Permanent Marker", cursive;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-color: #f3f3ae;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.note__title,
+.note__description {
+  font-family: "Permanent Marker", cursive;
+  width: 100%;
+  padding: 8px 14px;
+  background: transparent;
+  border: none;
+}
+
+.note__title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+hr {
+  width: 90%;
+  border: 1px solid rgba(184, 135, 11, 0.5);
+}
+
+.note__description {
+  flex-grow: 1;
+  font-size: 14px;
+  border: none;
+}
+
+.note__delete {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 20px;
+  color: rgba(184, 135, 11, 0.5);
+  padding: 5px;
+}
+
+.note__delete:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.note__dogear {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px 0 0 40px;
+  border-color: white white white palegoldenrod;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: rotate(90deg);
+  -webkit-box-shadow: -6px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -6px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -6px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
